@@ -1,3 +1,0 @@
-grammar clausewitz;
-
-start : ;

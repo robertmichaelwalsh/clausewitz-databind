@@ -15,6 +15,23 @@
 					<target>1.8</target>
 				</configuration>
 			</plugin>
+			<plugin>
+				<groupId>org.antlr</groupId>
+				<artifactId>antlr4-maven-plugin</artifactId>
+				<version>4.5</version>
+				<configuration>
+					<visitor>true</visitor>
+					<outputDirectory>${basedir}/src/main/java/uk/co/robertmichaelwalsh/clausewitz/parser</outputDirectory>
+					<sourceDirectory>${basedir}/src/main/antlr4</sourceDirectory>
+				</configuration>
+				<executions>
+					<execution>
+						<goals>
+							<goal>antlr4</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
 		</plugins>
 	</build>
 	<dependencies>
